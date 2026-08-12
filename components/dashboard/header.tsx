@@ -67,7 +67,7 @@ export default function Header() {
     //       </div>
     //     </div>
     //   </header>
-    <header className="w-full">
+    <header className="w-full sm:px-6 sm:py-8 lg:px-8 xl:px-10 -mt-10">
       <div className="flex items-center gap-12 mt-2 rounded-xl bg-white p-4 shadow-sm lg:flex-row lg:items-center lg:justify-between">
         {/* Left */}
         <div className="shrink-0">

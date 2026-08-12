@@ -119,13 +119,13 @@ export default function Merchants() {
   return (
     <div className="space-y-8 mb-4">
       {/* PAGE TITLE */}
-      <div className="rounded-xl border bg-white p-4">
+      {/* <div className="rounded-xl border bg-white p-4">
         <h2 className="  text-2xl font-bold text-black">Merchant Management</h2>
         <p className="mt-1 text-gray-600">Manage all savings merchants.</p>
-      </div>
+      </div> */}
       {/* STATS */}
-      <section className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
-        <div className="rounded-xl bg-white p-5 shadow-sm">
+      <section className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4 -mt-6">
+        <div className="rounded-xl bg-white p-4 shadow-sm">
           <div className="flex items-center justify-between">
             <p className="text-sm text-gray-600">TOTAL MERCHANTS</p>
             <Store className="text-gray-600" />
@@ -136,7 +136,7 @@ export default function Merchants() {
           </h2>
         </div>
 
-        <div className="rounded-xl bg-white p-5 shadow-sm">
+        <div className="rounded-xl bg-white p-4 shadow-sm">
           <div className="flex items-center justify-between">
             <p className="text-sm text-gray-600">ACTIVE</p>
 
@@ -148,7 +148,7 @@ export default function Merchants() {
           </h2>
         </div>
 
-        <div className="rounded-xl bg-white p-5 shadow-sm">
+        <div className="rounded-xl bg-white p-4 shadow-sm">
           <div className="flex items-center justify-between">
             <p className="text-sm text-gray-600">PENDING</p>
 
@@ -160,7 +160,7 @@ export default function Merchants() {
           </h2>
         </div>
 
-        <div className="rounded-xl bg-white p-5 shadow-sm">
+        <div className="rounded-xl bg-white p-4 shadow-sm">
           <div className="flex items-center justify-between">
             <p className="text-sm text-gray-600 font-medium">SUSPENDED</p>
 

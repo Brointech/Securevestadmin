@@ -17,7 +17,7 @@ export default function StatsCard({
   positive = true,
 }: Props) {
   return (
-    <div className="w-full min-w-0 bg-white rounded-xl p-4">
+    <div className="w-full min-w-0 bg-white rounded-xl p-4 -mt-6">
       <p className="truncate text-gray-500 text-[13px]">{title}</p>
 
       <div className="flex items-center justify-between gap-4 mt-3">

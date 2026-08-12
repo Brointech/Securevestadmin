@@ -9,7 +9,7 @@ export default function DashboardPage() {
     <DashboardLayout>
       <Header />
 
-      <div className="mt-6">
+      <div className="mt-6 sm:px-6 sm:py-8 lg:px-8 xl:px-10">
         <SavingsTabs />
       </div>
     </DashboardLayout>
