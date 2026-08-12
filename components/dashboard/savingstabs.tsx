@@ -39,11 +39,10 @@ export default function SavingsTabs() {
   return (
     <>
       {/* Tabs */}
-      <div className="-mt-13">
+      <div className="">
         <div className="hidden mb-8 md:flex flex-wrap gap-3 border-gray-200 pb-4">
           {tabs.map((tab) => {
             const Icon = tab.icon;
-
             return (
               <button
                 key={tab.id}
@@ -67,7 +66,7 @@ export default function SavingsTabs() {
           <select
             value={activeTab}
             onChange={(e) => setActiveTab(e.target.value as Tab)}
-            className="block w-[120px] min-w-0 rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm font-medium text-gray-700 outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 overflow-hidden"
+            className="block w-[120px] min-w-0 rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm font-medium text-gray-700 outline-none focus:border-gray-500 focus:ring-2 focus:ring-gray-300 overflow-hidden"
           >
             {tabs.map((tab) => (
               <option key={tab.id} value={tab.id}>

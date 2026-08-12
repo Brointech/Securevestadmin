@@ -124,7 +124,7 @@ export default function Merchants() {
         <p className="mt-1 text-gray-600">Manage all savings merchants.</p>
       </div> */}
       {/* STATS */}
-      <section className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4 -mt-6">
+      <section className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4 sm:-mt-6">
         <div className="rounded-xl bg-white p-4 shadow-sm">
           <div className="flex items-center justify-between">
             <p className="text-sm text-gray-600">TOTAL MERCHANTS</p>

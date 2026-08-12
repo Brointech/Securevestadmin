@@ -7,7 +7,7 @@ export default function Overview() {
   return (
     <>
       {" "}
-      <section className="grid grid-cols-1 gap-5 mt-8 sm:grid-cols-2 xl:grid-cols-4">
+      <section className="grid grid-cols-1 gap-10 mt-8 sm:grid-cols-2 xl:grid-cols-4 ">
         <StatsCard
           title="TOTAL USERS"
           value="₦0"
