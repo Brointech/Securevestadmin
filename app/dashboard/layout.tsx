@@ -10,7 +10,7 @@ export default function DashboardLayout({
       <Sidebar />
 
       <section className="flex-1 lg:ml-27 min-w-0">
-        <div className="space-y-6 lg:ml-2 px-4 sm:px-6 lg:px-7 mt-8 lg:mt-3 overflow-x-hidden xl:max-w-[95%] 2xl:max-w-[60%]">
+        <div className="space-y-6 lg:ml-2 px-4 sm:px-6 lg:px-7 mt-8 lg:mt-3 overflow-x-hidden">
           {children}
         </div>
       </section>
