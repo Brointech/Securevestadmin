@@ -18,29 +18,6 @@
 //   );
 // }
 
-// import Sidebar from "@/components/dashboard/sidebar";
-
-// export default function DashboardLayout({
-//   children,
-// }: {
-//   children: React.ReactNode;
-// }) {
-//   return (
-//     <main className="flex min-h-screen bg-gray-100">
-//       {/* Sidebar */}
-//       <Sidebar />
-
-//       {/* Main Area */}
-//       <section className="flex-1 min-w-0">
-//         {/* Content Container */}
-//         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-4">
-//           <div className="space-y-6">{children}</div>
-//         </div>
-//       </section>
-//     </main>
-//   );
-// }
-
 import Sidebar from "@/components/dashboard/sidebar";
 
 export default function DashboardLayout({

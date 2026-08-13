@@ -40,7 +40,7 @@ export default function SavingsTabs() {
     <>
       {/* Tabs */}
       <div className="">
-        <div className="hidden mb-8 md:flex flex-wrap gap-3 border-gray-200 pb-4">
+        <div className="hidden mb-8 md:flex flex-wrap gap-3 border-gray-200 pb-4 ">
           {tabs.map((tab) => {
             const Icon = tab.icon;
             return (
