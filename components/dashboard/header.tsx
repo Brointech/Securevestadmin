@@ -5,10 +5,10 @@ import { Bell, Download, Search } from "lucide-react";
 export default function Header() {
   return (
     <header className="w-full mt-10 sm:mt-0 ">
-      <div className="flex items-center overflow-x-hidden gap-2 mt-2 rounded-xl bg-white p-4 shadow-sm lg:flex-row lg:items-center lg:justify-between">
+      <div className="flex items-center justify-between overflow-x-hidden gap-2 mt-2 rounded-xl bg-white p-4 shadow-sm lg:flex-row lg:items-center lg:justify-between">
         {/* Left */}
         <div className="shrink-0">
-          <h2 className="text-xl font-bold text-gray-900 sm:text-2xl">
+          <h2 className="text-[14px] font-bold text-gray-900 sm:text-2xl">
             Overview
           </h2>
         </div>
