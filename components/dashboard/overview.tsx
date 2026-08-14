@@ -1,4 +1,4 @@
-"use cleint";
+"use client";
 
 import { Wallet, CreditCard, UserPlus, Users } from "lucide-react";
 import StatsCard from "@/components/dashboard/statscard";
