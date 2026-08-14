@@ -5,12 +5,14 @@ import RolesLayout from "./layout";
 
 export default function DashboardPage() {
   return (
-    <RolesLayout>
+    <>
+      {/* <RolesLayout> */}
       {/* <Header /> */}
 
       <div className="mt-6">
         <Roles />
       </div>
-    </RolesLayout>
+      {/* </RolesLayout> */}
+    </>
   );
 }

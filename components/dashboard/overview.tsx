@@ -6,7 +6,7 @@ import StatsCard from "@/components/dashboard/statscard";
 export default function Overview() {
   return (
     <>
-      <div className="mt-12">
+      <div className="mt-8">
         {" "}
         <section className="grid grid-cols-1 gap-10 mt-8 sm:grid-cols-2 xl:grid-cols-4">
           <StatsCard

@@ -6,12 +6,14 @@ import DashboardLayout from "./layout";
 
 export default function DashboardPage() {
   return (
-    <DashboardLayout>
-      <Header />
+    // <DashboardLayout>
+    <>
+      {/* <Header /> */}
 
       <div className="mt-6">
         <SavingsTabs />
       </div>
-    </DashboardLayout>
+    </>
+    // </DashboardLayout>
   );
 }

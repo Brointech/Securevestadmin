@@ -47,13 +47,17 @@ export default function User() {
       <div className="px-4 py-6 sm:px-6 sm:py-8 lg:px-8 xl:px-10">
         <section className="mb-8 -mt-10">
           <div className="flex flex-col gap-5">
-            <div className="">
+            <div className="mb-8">
               <h2 className="text-black text-22 sm:text-2xl font-semibold">
                 Users
               </h2>
+              <p className="mt-1 text-[12px] text-gray-700">
+                Manage banners, promotions, articles, onboarding messages and
+                product content.
+              </p>
             </div>
-
-            <div className="relative w-full lg:max-w-md">
+            {/* SEARCH */}
+            {/* <div className="relative w-full lg:max-w-md">
               <Search
                 size={18}
                 className="absolute left-4 top-1/2 -translate-y-1/2 text-black"
@@ -63,7 +67,7 @@ export default function User() {
                 placeholder="Search by name, phone, or account number"
                 className="w-full text-gray-500 rounded-xl border py-3 pl-11 pr-4 outline-none focus:border-primary"
               />
-            </div>
+            </div> */}
           </div>
         </section>
 

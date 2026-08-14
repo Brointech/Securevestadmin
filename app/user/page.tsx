@@ -5,12 +5,14 @@ import UserLayout from "./layout";
 
 export default function DashboardPage() {
   return (
-    <UserLayout>
+    <>
+      {/* <UserLayout> */}
       {/* <Header /> */}
 
       <div className="mt-6">
         <User />
       </div>
-    </UserLayout>
+      {/* </UserLayout> */}
+    </>
   );
 }
