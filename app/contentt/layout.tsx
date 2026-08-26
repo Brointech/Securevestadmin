@@ -11,12 +11,10 @@ export default function ContentLayout({
       <Sidebar />
 
       <section className="min-w-0 pt-16 lg:pt-0 lg:ml-60">
-        <div className="w-full max-w-[1280px]">
-          <DashboardNavbar />
+        <DashboardNavbar />
 
-          <div className="px-0 sm:px-6 lg:px-0">
-            <div className="py-6 lg:py-4">{children}</div>
-          </div>
+        <div className="w-full max-w-[1280px] px-4 sm:px-6 lg:px-4">
+          <div className="py-6 lg:py-4">{children}</div>
         </div>
       </section>
     </main>

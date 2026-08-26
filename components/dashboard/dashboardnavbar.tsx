@@ -14,7 +14,7 @@ export default function DashboardNavbar() {
           <PanelLeft size={22} />
         </button>
         <h1 className="truncate text-xl font-bold text-gray-900 sm:text-2xl lg:text-xl">
-          Hello, Securevest
+          Hello, Securevest Admin
         </h1>
       </div>
     </header>

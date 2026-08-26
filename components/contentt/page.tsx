@@ -125,7 +125,7 @@ export default function ContentPage() {
             </button> */}
           </div>
         </div>
-        {/* ============================ CONTENT STATISTICS ========================================== */}
+        {/* ============================ CONTENT STATISTICS ======================================= */}
         <section className="mb-7 grid grid-cols-2 gap-3 lg:grid-cols-4">
           {/* Total */}
           <div className="rounded-xl border border-white/10  p-4 sm:p-5 shadow-sm bg-white">

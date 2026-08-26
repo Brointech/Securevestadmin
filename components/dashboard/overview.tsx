@@ -10,7 +10,7 @@ export default function Overview() {
         {" "}
         <section className="grid grid-cols-1 gap-10 mt-8 sm:grid-cols-2 xl:grid-cols-4">
           <StatsCard
-            title="Total Users"
+            title="TOTAL USERS"
             value="0"
             change="+3.3%"
             positive
@@ -18,14 +18,14 @@ export default function Overview() {
           />
 
           <StatsCard
-            title="Transaction Volume"
+            title="TRANSACTION VOLUME"
             value="₦0.00"
             change="-3.3%"
             icon={CreditCard}
           />
 
           <StatsCard
-            title="Active Cards"
+            title="ACTIVE CARDS"
             value="0"
             change="+3.3%"
             positive
@@ -33,7 +33,7 @@ export default function Overview() {
           />
 
           <StatsCard
-            title="Flagged Alerts"
+            title="FLAGGED ALERTS"
             value="0"
             change="+3.3%"
             positive

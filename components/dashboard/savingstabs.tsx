@@ -4,11 +4,13 @@ import { useState } from "react";
 import { LayoutGrid, Store, ReceiptText, Wallet } from "lucide-react";
 import Overview from "@/components/dashboard/overview";
 
-import Merchants from "@/components/dashboard/merchants";
+import Merchants from "@/components/dashboard/savers";
 import Transactions from "@/components/dashboard/transactions";
 import Finances from "@/components/dashboard/finances";
+import VerificationRequired from "@/components/dashboard/verification";
+import Savers from "@/components/dashboard/savers";
 
-type Tab = "overview" | "merchants" | "transactions" | "finances";
+type Tab = "overview" | "savers" | "transactions" | "finances";
 
 const tabs = [
   {
@@ -17,8 +19,8 @@ const tabs = [
     icon: LayoutGrid,
   },
   {
-    id: "merchants",
-    label: "Merchants",
+    id: "savers",
+    label: "Savers",
     icon: Store,
   },
   {
@@ -41,9 +43,10 @@ export default function SavingsTabs() {
       {/* Tabs */}
       <div className="w-full px-0 sm:px-0 lg:px-2">
         {/* Verification Status */}
+        <VerificationRequired />
 
         {/* Heading */}
-        <h2 className="text-2xl font-bold text-black mb-2 -mt-4">
+        <h2 className="text-2xl font-bold text-black mb-2 -mt-0">
           Savings Dashboard
         </h2>
         <p className="font-medium text-gray-600 text-sm mb-6">
@@ -87,8 +90,8 @@ export default function SavingsTabs() {
       </div>
       {/* Content */}
       {activeTab === "overview" && <Overview />}
-      {activeTab === "merchants" && <Merchants />}
-      {/* {activeTab === "transactions" && <Transactions />} */}
+      {activeTab === "savers" && <Savers />}
+      {activeTab === "transactions" && <Transactions />}
       {activeTab === "finances" && <Finances />}
     </>
   );
