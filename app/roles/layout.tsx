@@ -1,5 +1,6 @@
 import Sidebar from "@/components/dashboard/sidebar";
 import DashboardNavbar from "@/components/dashboard/dashboardnavbar";
+
 export default function UserLayout({
   children,
 }: {

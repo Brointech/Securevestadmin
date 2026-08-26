@@ -1,8 +1,6 @@
 "use client";
 
-import Header from "@/components/dashboard/header";
 import SavingsTabs from "@/components/dashboard/savingstabs";
-import DashboardLayout from "./layout";
 
 export default function DashboardPage() {
   return (

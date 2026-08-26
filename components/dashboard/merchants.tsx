@@ -117,7 +117,7 @@ export default function Merchants() {
   });
 
   return (
-    <div className="space-y-8 mb-4">
+    <div className="space-y-8 mb-4 w-full px-0 sm:px-0 lg:px-2">
       {/* PAGE TITLE */}
       {/* <div className="rounded-xl border bg-white p-4">
         <h2 className="  text-2xl font-bold text-black">Merchant Management</h2>
@@ -127,47 +127,43 @@ export default function Merchants() {
       <section className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4 sm:-mt-6">
         <div className="rounded-xl bg-white p-4 shadow-sm">
           <div className="flex items-center justify-between">
-            <p className="text-sm text-gray-600">TOTAL MERCHANTS</p>
+            <p className="text-[14px] text-gray-600">Total Merchants</p>
             <Store className="text-gray-600" />
           </div>
 
-          <h2 className="mt-4 text-gray-600 text-3xl font-bold">
-            {stats.total}
-          </h2>
+          <h2 className="mt-4 text-black text-3xl font-bold">{stats.total}</h2>
         </div>
 
         <div className="rounded-xl bg-white p-4 shadow-sm">
           <div className="flex items-center justify-between">
-            <p className="text-sm text-gray-600">ACTIVE</p>
+            <p className="text-sm text-gray-600">Active</p>
 
             <CheckCircle2 className="text-gray-600" />
           </div>
 
-          <h2 className="mt-4 text-gray-600 text-3xl font-bold">
-            {stats.active}
-          </h2>
+          <h2 className="mt-4 text-black text-3xl font-bold">{stats.active}</h2>
         </div>
 
         <div className="rounded-xl bg-white p-4 shadow-sm">
           <div className="flex items-center justify-between">
-            <p className="text-sm text-gray-600">PENDING</p>
+            <p className="text-sm text-gray-600">Pending</p>
 
             <Clock3 className="text-gray-600" />
           </div>
 
-          <h2 className="mt-4 text-gray-600 text-3xl font-bold">
+          <h2 className="mt-4 text-black text-3xl font-bold">
             {stats.pending}
           </h2>
         </div>
 
         <div className="rounded-xl bg-white p-4 shadow-sm">
           <div className="flex items-center justify-between">
-            <p className="text-sm text-gray-600 font-medium">SUSPENDED</p>
+            <p className="text-sm text-gray-600 font-medium">Suspended</p>
 
             <Ban className="text-red-500" />
           </div>
 
-          <h2 className="mt-4 text-gray-600 text-3xl font-bold">
+          <h2 className="mt-4 text-black text-3xl font-bold">
             {stats.suspended}
           </h2>
         </div>
@@ -188,7 +184,7 @@ export default function Merchants() {
               placeholder="Search merchants..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full rounded-xl border border-gray-300 text-gray-600 py-3 pl-11 pr-4 outline-none focus:border-primary"
+              className="w-full rounded-xl border border-gray-300 text-gray-600 py-3 pl-11 pr-4 outline-none focus:border-gray-300 focus:ring-2 focus:ring-gray-200 transition"
             />
           </div>
 
@@ -196,7 +192,7 @@ export default function Merchants() {
             <select
               value={status}
               onChange={(e) => setStatus(e.target.value)}
-              className="rounded-xl border border-gray-300 text-gray-600 px-4 py-3 outline-none"
+              className="block max-w-[160px] min-w-0  rounded-xl border border-gray-300 text-gray-600 text-sm px-4 py-3 outline-none overflow-x-hidden"
             >
               <option>All</option>
               <option>Active</option>
@@ -219,7 +215,6 @@ export default function Merchants() {
       </section>
 
       {/* TABLE */}
-
       <section className="overflow-hidden rounded-xl bg-white shadow-sm">
         <div className="overflow-x-auto">
           <table className="min-w-[900px] w-full">

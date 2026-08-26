@@ -6,26 +6,26 @@ import StatsCard from "@/components/dashboard/statscard";
 export default function Overview() {
   return (
     <>
-      <div className="mt-8">
+      <div className="mt-8 w-full px-0 sm:px-0 lg:px-2">
         {" "}
         <section className="grid grid-cols-1 gap-10 mt-8 sm:grid-cols-2 xl:grid-cols-4">
           <StatsCard
-            title="TOTAL USERS"
-            value="₦0"
+            title="Total Users"
+            value="0"
             change="+3.3%"
             positive
             icon={Wallet}
           />
 
           <StatsCard
-            title="TRANSACTION VOLUME"
-            value="₦0"
+            title="Transaction Volume"
+            value="₦0.00"
             change="-3.3%"
             icon={CreditCard}
           />
 
           <StatsCard
-            title="ACTIVE CARDS"
+            title="Active Cards"
             value="0"
             change="+3.3%"
             positive
@@ -33,7 +33,7 @@ export default function Overview() {
           />
 
           <StatsCard
-            title="FLAGGED ALERTS"
+            title="Flagged Alerts"
             value="0"
             change="+3.3%"
             positive

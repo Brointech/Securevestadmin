@@ -62,6 +62,7 @@
 //     </main>
 //   );
 // }
+"use client";
 
 import Sidebar from "@/components/dashboard/sidebar";
 import { PanelLeft } from "lucide-react";
@@ -73,7 +74,7 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="min-h-screen w-full bg-gray-100">
+    <main className="min-h-screen w-full bg-[#f5f5f5]">
       {/* Sidebar */}
       <Sidebar />
 
@@ -127,6 +128,40 @@ export default function DashboardLayout({
 
 //           {/* Dashboard Content */}
 //           <div className="w-full px-4 sm:px-6 lg:px-0">
+//             <div className="w-full py-6 lg:py-4">{children}</div>
+//           </div>
+//         </div>
+//       </section>
+//     </main>
+//   );
+// }
+
+// "use client";
+
+// import { useState } from "react";
+// import Sidebar from "@/components/dashboard/sidebar";
+// import DashboardNavbar from "@/components/dashboard/dashboardnavbar";
+
+// export default function DashboardLayout({
+//   children,
+// }: {
+//   children: React.ReactNode;
+// }) {
+//   const [sidebarOpen, setSidebarOpen] = useState(false);
+
+//   return (
+//     <main className="min-h-screen w-full bg-[#f5f5f5]">
+//       {/* Sidebar */}
+//       <Sidebar open={sidebarOpen} setOpen={setSidebarOpen} />
+
+//       {/* Main Dashboard Area */}
+//       <section className="min-w-0 lg:ml-60">
+//         <div className="w-full max-w-[1280px]">
+//           {/* Navbar */}
+//           <DashboardNavbar setSidebarOpen={setSidebarOpen} />
+
+//           {/* Dashboard Content */}
+//           <div className="w-full px-4 sm:px-6 lg:px-4">
 //             <div className="w-full py-6 lg:py-4">{children}</div>
 //           </div>
 //         </div>

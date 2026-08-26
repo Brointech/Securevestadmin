@@ -39,7 +39,16 @@ export default function SavingsTabs() {
   return (
     <>
       {/* Tabs */}
-      <div className="">
+      <div className="w-full px-0 sm:px-0 lg:px-2">
+        {/* Verification Status */}
+
+        {/* Heading */}
+        <h2 className="text-2xl font-bold text-black mb-2 -mt-4">
+          Savings Dashboard
+        </h2>
+        <p className="font-medium text-gray-600 text-sm mb-6">
+          Monitor your transactions and access insights to grow your business.
+        </p>
         <div className="hidden mb-8 md:flex flex-wrap gap-3 border-gray-200 pb-4 ">
           {tabs.map((tab) => {
             const Icon = tab.icon;
@@ -66,7 +75,7 @@ export default function SavingsTabs() {
           <select
             value={activeTab}
             onChange={(e) => setActiveTab(e.target.value as Tab)}
-            className="block w-[120px] min-w-0 rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm font-medium text-gray-700 outline-none focus:border-gray-500 focus:ring-2 focus:ring-gray-300 overflow-hidden"
+            className="block w-[120px] min-w-0 rounded-lg border border-gray-300 bg-white px-4 py-3 text-l font-medium text-gray-700 outline-none focus:border-gray-500 focus:ring-2 focus:ring-gray-300 overflow-hidden"
           >
             {tabs.map((tab) => (
               <option key={tab.id} value={tab.id}>

@@ -75,9 +75,9 @@ export default function SettingsPage() {
 
   return (
     <main className="min-h-screen w-full bg-transparent">
-      <div className="mx-auto w-full max-w-[1600px] px-4 py-6 sm:px-6 sm:py-8 lg:px-8 xl:px-10">
+      <div className="mx-auto w-full max-w-[1600px] px-4 py-6 sm:px-6 sm:py-8 lg:px-8 xl:px-0">
         {/* PAGE HEADER */}
-        <header className="mb-7">
+        <header className="mb-7 -mt-10">
           <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
             Settings
           </h1>

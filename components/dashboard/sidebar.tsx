@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  LayoutDashboard,
   House,
   X,
   CircleUser,
@@ -33,7 +32,7 @@ export default function Sidebar() {
   return (
     <>
       {/* Mobile Header */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 h-16 bg-white border-b border-gray-200 flex items-center justify-between px-5 z-40">
+      <div className="lg:hidden fixed top-0 left-0 right-0 h-16 bg-white border-b border-gray-300 flex items-center justify-between px-3 z-40">
         <button onClick={() => setOpen(true)}>
           <Menu size={26} className="text-gray-600" />
         </button>
@@ -51,7 +50,7 @@ export default function Sidebar() {
 
       <aside
         className={`
-          fixed left-0 top-0 h-full w-60 bg-[#F5F5F5] border-r flex flex-col justify-between z-50
+          fixed left-0 top-0 h-full w-60 bg-[#F5F5F5] border-r border-gray-300 flex flex-col justify-between z-50
           transform transition-transform duration-300 ease-in-out
           ${open ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
         `}
@@ -89,8 +88,8 @@ export default function Sidebar() {
                   className={`relative flex items-center gap-3 w-full px-3 py-2 rounded-[7px] transition-all duration-200 group
                   ${
                     active
-                      ? "bg-[#E1E1E1] text-black shadow-md "
-                      : "text-black hover:bg-primary-light hover:text-black "
+                      ? "bg-[#E1E1E1] text-black shadow-md"
+                      : "text-black hover:bg-[#E1E1E1] hover:text-black "
                   }`}
                 >
                   {active && (
@@ -106,7 +105,9 @@ export default function Sidebar() {
                     }
                   />
 
-                  <span className="text-sm font-semibold">{item.title}</span>
+                  <span className="text-[15px] text-gray-800 font-medium">
+                    {item.title}
+                  </span>
                 </Link>
               );
             })}

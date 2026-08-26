@@ -5,12 +5,12 @@ import ContentLayout from "./layout";
 
 export default function Contentt() {
   return (
-    <ContentLayout>
+    <>
       {/* <Header /> */}
 
       <div className="mt-6">
         <ContenttComponent />
       </div>
-    </ContentLayout>
+    </>
   );
 }

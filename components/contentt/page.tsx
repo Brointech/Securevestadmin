@@ -105,10 +105,10 @@ export default function ContentPage() {
 
   return (
     <main className="min-h-screen w-full overflow-x-hidden text-white">
-      <div className="mx-auto w-full max-w-[1500px] px-4 py-6 sm:px-6 sm:py-8 lg:px-8 xl:px-10">
+      <div className="mx-auto w-full max-w-[1500px] px-4 py-6 sm:px-6 sm:py-8 lg:px-6 xl:px-6">
         {/* ====================== PAGE HEADER ============================================== */}
-        <div className="-mt-10 mb-7 flex w-full items-center justify-between gap-4">
-          <div className=" min-w-0">
+        <div className="-mt-8 lg:-mt-10 mb-7 flex w-full items-center justify-between gap-4">
+          <div className="min-w-0">
             <h1 className="text-[24px] font-semibold text-black tracking-tight sm:text-[27px]">
               Content Management
             </h1>

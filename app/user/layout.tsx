@@ -14,7 +14,7 @@ export default function UserLayout({
         <div className="w-full max-w-[1280px]">
           <DashboardNavbar />
 
-          <div className=" px-4 sm:px-6 lg:px-6">
+          <div className="px-4 sm:px-6 lg:px-6">
             <div className="py-6 lg:py-4">{children}</div>
           </div>
         </div>
