@@ -101,12 +101,14 @@ export default function LoginPage() {
             SecureVest
           </span>
         </Link>
-        <Link
+
+        {/*======================= Create account ========================*/}
+        {/* <Link
           href="/register"
           className="text-sm font-medium text-[#0B2A5B] hover:underline"
         >
           Create account
-        </Link>
+        </Link> */}
       </header>
 
       {/* Main card */}
@@ -116,7 +118,7 @@ export default function LoginPage() {
             Welcome back
           </h1>
           <p className="mt-2 text-sm text-[#5B6472]">
-            Sign in to continue to your SecureVest account.
+            Sign in to continue to your SecureVest admin dashboard.
           </p>
 
           <form onSubmit={handleSubmit} className="mt-6 space-y-4">
@@ -126,7 +128,7 @@ export default function LoginPage() {
               </p>
             )}
 
-            {/* Email */}
+            {/*======================== Email ======================================*/}
             <div>
               <label className="block text-sm font-medium text-[#0B2A5B] mb-1.5">
                 Email address
@@ -145,7 +147,7 @@ export default function LoginPage() {
               )}
             </div>
 
-            {/* Password */}
+            {/*========================== Password ===================================*/}
             <div>
               <label className="block text-sm font-medium text-[#0B2A5B] mb-1.5">
                 Password
@@ -178,15 +180,15 @@ export default function LoginPage() {
               )}
             </div>
 
-            {/* Forgot password */}
-            <div className="flex justify-end">
+            {/*======================= Forgot password ========================*/}
+            {/* <div className="flex justify-end">
               <Link
                 href="/forgot-password"
                 className="text-xs font-medium text-[#0B2A5B] hover:underline"
               >
                 Forgot password?
               </Link>
-            </div>
+            </div> */}
 
             <button
               type="submit"
@@ -198,19 +200,20 @@ export default function LoginPage() {
             </button>
           </form>
 
-          <p className="mt-6 text-center text-sm text-[#5B6472]">
+          {/*======================= Create an account ========================*/}
+          {/* <p className="mt-6 text-center text-sm text-[#5B6472]">
             Don&apos;t have an account?{" "}
             <Link
-              href="/component/dashboard/register"
+              href="/register"
               className="text-[#0B2A5B] font-medium hover:underline"
             >
               Create account
             </Link>
-          </p>
+          </p> */}
         </div>
       </main>
 
-      {/* Footer badge */}
+      {/*============================= Footer badge ================================*/}
       <footer className="w-full flex items-center justify-center gap-2 pb-8 text-xs text-[#2d2e2e]">
         <span>
           Our banking partners are licensed by <b>CBN</b>

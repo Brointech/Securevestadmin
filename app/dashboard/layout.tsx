@@ -62,6 +62,7 @@
 //     </main>
 //   );
 // }
+
 "use client";
 
 import Sidebar from "@/components/dashboard/sidebar";
