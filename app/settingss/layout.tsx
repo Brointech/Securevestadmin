@@ -12,7 +12,7 @@ export default function SettingsLayout({
 
       <section className="min-w-0 flex-1 pt-16 lg:pt-0 lg:ml-60">
         <DashboardNavbar />
-        <div className="w-full max-w-[1280px] px-4 sm:px-6 lg:px-4">
+        <div className="w-full max-w-[1280px] px-4 sm:px-6 lg:px-6">
           <div className="py-6 lg:py-4">{children}</div>
         </div>
       </section>

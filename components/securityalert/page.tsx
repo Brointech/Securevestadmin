@@ -140,7 +140,7 @@ function StatusBadge({ status }: { status: string }) {
 export default function SecurityActivityPage() {
   return (
     <main className="min-h-screen w-full bg-transparent">
-      <div className="mx-auto w-full max-w-[1600px] px-4 py-6 sm:px-6 sm:py-8 lg:px-8 xl:px-0">
+      <div className="mx-auto w-full max-w-[1600px] px-0 py-6 sm:px-0 sm:py-8 lg:px-0 xl:px-0">
         {/* PAGE HEADER */}
         <header className="mb-7 -mt-10 flex w-full items-center justify-between gap-4">
           <div className="min-w-0">
