@@ -90,14 +90,15 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F5F5F5] flex flex-col">
+    <div className="min-h-screen bg-primary-background flex flex-col">
       {/* Top bar */}
       <header className="w-full px-6 sm:px-20 py-5 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <span className="w-8 h-8 rounded-lg bg-[#0B2A5B] flex items-center justify-center">
+          {/*============================ LOGO ==========================*/}
+          {/* <span className="w-8 h-8 rounded-lg bg-primary-background flex items-center justify-center">
             <span className="text-white text-sm font-bold">SV</span>
-          </span>
-          <span className="text-[#0B2A5B] font-semibold text-lg tracking-tight">
+          </span> */}
+          <span className="text-primary font-semibold text-lg tracking-tight">
             SecureVest
           </span>
         </Link>
@@ -114,7 +115,7 @@ export default function LoginPage() {
       {/* Main card */}
       <main className="flex-1 flex items-start sm:items-center justify-center px-4 sm:px-6 py-6 sm:py-12">
         <div className="w-full max-w-[640px] bg-white rounded-2xl shadow-[0_2px_24px_rgba(11,42,91,0.06)] border border-[#EDF0F5] p-6 sm:p-9">
-          <h1 className="text-xl sm:text-2xl font-semibold text-[#0B2A5B] leading-snug">
+          <h1 className="text-xl sm:text-2xl font-semibold text-primary-text leading-snug">
             Welcome back
           </h1>
           <p className="mt-2 text-sm text-[#5B6472]">
@@ -193,7 +194,7 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={submitting}
-              className="w-full rounded-xl bg-[#0B2A5B] text-white text-sm font-semibold py-3.5 hover:bg-[#0B2A5B]/90 disabled:opacity-60 transition-colors flex items-center justify-center gap-2"
+              className="w-full rounded-xl bg-primary-background text-white text-sm font-semibold py-3.5 hover:bg-primary-background/90 disabled:opacity-60 transition-colors flex items-center justify-center gap-2"
             >
               {submitting ? "Signing in..." : "Login"}
               {!submitting && <ArrowRightToLine className="text-base" />}
